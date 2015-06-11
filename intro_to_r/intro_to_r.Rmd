@@ -308,11 +308,6 @@ Os dados serão armazenados num banco de dados chamado `present`.
     [http://cran.r-project.org/doc/contrib/Short-refcard.pdf](http://cran.r-project.org/doc/contrib/Short-refcard.pdf) 
     para encontrar comandos úteis.
 
-These data come from a report by the Centers for Disease Control 
-[http://www.cdc.gov/nchs/data/nvsr/nvsr53/nvsr53_20.pdf](http://www.cdc.gov/nchs/data/nvsr/nvsr53/nvsr53_20.pdf). 
-Check it out if you would like to read more about an analysis of sex ratios at 
-birth in the United States.
-
 Esses dados são provenientes de uma pesquisa realizada pelo Centro 
 de Controle de Doenças (*Center For Disease Control*) 
 [http://www.cdc.gov/nchs/data/nvsr/nvsr53/nvsr53_20.pdf](http://www.cdc.gov/nchs/data/nvsr/nvsr53/nvsr53_20.pdf). 
