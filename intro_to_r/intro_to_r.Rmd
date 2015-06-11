@@ -7,7 +7,6 @@ output:
     theme: cerulean
   pdf_document: default
 ---
-
 O objetivo deste laboratório é introduzir você ao R e ao RStudio, os programas que você 
 utilizará ao longo do curso tanto para aprender os conceitos estatísticos discutidos no 
 livro quanto para analisar dados reais e chegar a conclusões informadas. Para já distinguir 
@@ -102,12 +101,6 @@ comandos do R significa passar a uma função um certo número de argumentos. Os
 `dim` e `names`, por exemplo, precisaram de um único argumento cada 
 um: o nome do banco de dados.
 
-One advantage of RStudio is that it comes with a built-in data viewer. Click on
-the name `arbuthnot` in the *Environment* pane (upper right window) that lists 
-the objects in your workspace. This will bring up an alternative display of the 
-data set in the *Data Viewer* (upper left window). You can close the data viewer
-by clicking on the *x* in the upper lefthand corner.
-
 Uma vantagem do RStudio é que ele vem com um visualizador de dados embutido. 
 Clique no nome `arbuthnot` no painel *Environment* (Ambiente), no canto superior 
 direito da janela que lista os objetos em seu espaço de trabalho. Isso fará 
@@ -116,9 +109,6 @@ com que uma visualização alternativa do conjunto de dados apareça no *Data Vi
 visualizador de dados clicando no *x* no canto superior esquerdo.
 
 ## Explorando
-
-Let's start to examine the data a little more closely. We can access the data in
-a single column of a data frame separately using a command like
 
 Vamos começar a examinar os dados um pouco mais de perto. Podemos acessar 
 separadamente os dados de uma única coluna da base de dados usando um comando como
@@ -178,10 +168,6 @@ no topo daquele painel.
 
 2.  Há alguma tendência aparente no número de meninas batizadas ao longo dos anos? 
     Como você a descreveria?
-
-Now, suppose we want to plot the total number of baptisms.  To compute this, we 
-could use the fact that R is really just a big calculator. We can type in 
-mathematical expressions like
 
 Agora, vamos supôr que queiramos fazer um gráfico com o número total de batismos. 
 Para calcular isso, nós podemos nos aproveitar do fato de que o R é, na verdade, 
