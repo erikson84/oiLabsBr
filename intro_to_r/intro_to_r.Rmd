@@ -238,87 +238,95 @@ ou também pode ser calculado para todos os anos simultaneamente:
 arbuthnot$boys / (arbuthnot$boys + arbuthnot$girls)
 ```
 
-Note that with R as with your calculator, you need to be conscious of the order 
-of operations.  Here, we want to divide the number of boys by the total number 
-of newborns, so we have to use parentheses.  Without them, R will first do the 
-division, then the addition, giving you something that is not a proportion.
+Preste atenção que, ao utilizar o R como uma calculadora, você precisa estar ciente
+da ordem das operações. Aqui, nós queremos dividir o número de meninos pelo total de 
+recém-nascidos, portanto precisamos usar parênteses. Sem eles, o R efetuará primeiro 
+a divisão, depois a adição, dando como resultado algo que não é uma proporção.
 
-3.  Now, make a plot of the proportion of boys over time. What do you see? Tip: 
-If you use the up and down arrow keys, you can scroll through your previous 
-commands, your so-called command history. You can also access it by clicking on 
-the history tab in the upper right panel.  This will save you a lot of typing in
-the future.
+3.  Agora, crie um gráfico das proporções dos meninos em relação ao tempo. O que você 
+    percebe? Dica: se você usar as teclas de flecha para cima e para baixo, você pode 
+    retomar os comando prévios, chamado de histórico de comandos. Você também pode 
+    acessá-lo clicando na aba `history` (histórico) no painel no canto superior direito. Isto irá 
+    lhe economizar várias digitações no futuro!
 
-Finally, in addition to simple mathematical operators like subtraction and 
-division, you can ask R to make comparisons like greater than, `>`, less than,
-`<`, and equality, `==`. For example, we can ask if boys outnumber girls in each 
-year with the expression
+Por fim, além de operadores matemáticos simples como subtração e divisão, você 
+pode pedir para o R fazer comparações como mair que, `>`, menor que, `<`, e 
+igualdade, `==`. Por exemplo, podemos perguntar se o número de meninos é maior 
+que de meninas em cada ano com a expressão
+
 
 ```{r boys-more-than-girls, eval=FALSE}
 arbuthnot$boys > arbuthnot$girls
 ```
 
-This command returns 82 values of either `TRUE` if that year had more boys than 
-girls, or `FALSE` if that year did not (the answer may surprise you). This 
-output shows a different kind of data than we have considered so far. In the 
-`arbuthnot` data frame our values are numerical (the year, the number of boys 
-and girls). Here, we've asked R to create *logical* data, data where the values
-are either `TRUE` or `FALSE`. In general, data analysis will involve many 
-different kinds of data types, and one reason for using R is that it is able to
-represent and compute with many of them.
+Este comando retorna 82 valores ou do tipo `TRUE` (verdadeiro) se aquele ano teve 
+mais meninos batizados do que meninas, ou `FALSE` (falso) se naquele ano foi o 
+contrário (a resposta pode surpreendê-lo). Esse resultado mostra um tipo diferente 
+de variável daquelas que vimos até agora. No banco de dados `arbuthnot` nossos dados 
+são numéricos (o ano, o número de meninos e meninas). Aqui, nós pedimos para o R 
+criar dados *lógicos*, dados cujos valores são `TRUE` (verdadeiro) ou `FALSE` (falso). 
+De modo geral, a análise de dados envolverá vários tipos diferentes de dados, e uma 
+razão para usar o R é que ele consegue representar e realizar computações com vários 
+tipos de dados.
 
-This seems like a fair bit for your first lab, so let's stop here. To exit 
-RStudio you can click the *x* in the upper right corner of the whole window.  
-You will be prompted to save your workspace. If you click *save*, RStudio will 
-save the history of your commands and all the objects in your workspace so that 
-the next time you launch RStudio, you will see `arbuthnot` and you will have 
-access to the commands you typed in your previous session. For now, click *save*,
-then start up RStudio again.
+Já é o bastante para seu primeiro laboratório, então vamos parar por aqui. Para 
+sair do RStudio você pode clicar no *x* no canto superior direto da janela do 
+aplicativo. Você será questionado se quer salvar seu espaço de trabalho. Se você 
+clicar em *save* (salvar), o RStudio salvará seu histórico e todos os objetos de 
+seu espaço de trabalho para que, na próxima vez que você inicializar o RStudio, 
+você possa ver o objeto `arbuthnot` e possa ter acesso aos comando que você digitou 
+nas sessões prévias. Por enquanto, clique em *save*, e depois reinicialize o RStudio.
 
 * * *
 
-## On Your Own
+## Sua Vez
 
-In the previous few pages, you recreated some of the displays and preliminary 
-analysis of Arbuthnot's baptism data. Your assignment involves repeating these 
-steps, but for present day birth records in the United States.  Load up the 
-present day data with the following command.
+Nas páginas anteriores, você recriou algumas das exposições e análises preliminares 
+dos dados de batismo de Arbuthnot. Sua tarefa consiste repetir essas etapas, mas 
+para os registros atuais de nascimento dos Estados Unidos. Carregue os dados atuais 
+com o seguinte comando.
 
 ```{r load-present-data, eval=FALSE}
 source("http://www.openintro.org/stat/data/present.R")
 ```
 
-The data are stored in a data frame called `present`.
+Os dados serão armazenados num banco de dados chamado `present`.
 
--   What years are included in this data set? What are the dimensions of the 
-    data frame and what are the variable or column names?
 
--   How do these counts compare to Arbuthnot's? Are they on a similar scale?
+-   Quais anos estão incluídos neste conjunto de dados? Quais são as dimensões 
+    da base de dados e quais são os nomes das variáveis ou colunas?
 
--   Make a plot that displays the boy-to-girl ratio for every year in the data 
-    set. What do you see? Does Arbuthnot's observation about boys being born in
-    greater proportion than girls hold up in the U.S.? Include the plot in your 
-    response.
+-   Como estas contagens se comparam aos dados de Arbuthnot? Eles estão numa escala similar?
 
--   In what year did we see the most total number of births in the U.S.? You can
-    refer to the help files or the R reference card 
-    [http://cran.r-project.org/doc/contrib/Short-refcard.pdf](http://cran.r-project.org/doc/contrib/Short-refcard.pdf)
-    to find helpful commands.
+-   Crie um gráfico que mostre a razão de meninos para meninas para cada ano do 
+    conjunto de dados. O que você pode verificar? A observação de Arbuthnot de 
+    que os meninos nascem numa proporção maior que as meninas se mantém nos EUA?
+    Inclua o gráfico em sua resposta.
+
+-   Em qual ano se verifica o maior número de nascimentos nos EUA? Você pode utilizar 
+    os arquivos de ajuda ou o cartão de referência do R 
+    [http://cran.r-project.org/doc/contrib/Short-refcard.pdf](http://cran.r-project.org/doc/contrib/Short-refcard.pdf) 
+    para encontrar comandos úteis.
 
 These data come from a report by the Centers for Disease Control 
 [http://www.cdc.gov/nchs/data/nvsr/nvsr53/nvsr53_20.pdf](http://www.cdc.gov/nchs/data/nvsr/nvsr53/nvsr53_20.pdf). 
 Check it out if you would like to read more about an analysis of sex ratios at 
 birth in the United States.
 
-That was a short introduction to R and RStudio, but we will provide you with more
-functions and a more complete sense of the language as the course progresses. 
-Feel free to browse around the websites for [R](http://www.r-project.org) and 
-[RStudio](http://rstudio.org) if you're interested in learning more, or find 
-more labs for practice at http://openintro.org.
+Esses dados são provenientes de uma pesquisa realizada pelo Centro 
+de Controle de Doenças (*Center For Disease Control*) 
+[http://www.cdc.gov/nchs/data/nvsr/nvsr53/nvsr53_20.pdf](http://www.cdc.gov/nchs/data/nvsr/nvsr53/nvsr53_20.pdf). 
+Confira-o se você desejar ler mais sobre a análise da razão entre os sexos nos nascimentos nos Estados Unidos.
+
+Esta foi uma curta introdução ao R e ao RStudio, mas nós forneceremos mais funções e 
+um sentido mais completa da linguagem ao longo do curso. Sinta-se livre para navegar 
+nas páginas da web do [R](http://www.r-project.org) e do [RStudio](http://rstudio.org) se 
+vocês estiver interessado em aprender mais, ou encontre mais laboratórios para praticar 
+em [http://openintro.org](http://openintro.org).
 
 <div id="license">
-This is a product of OpenIntro that is released under a 
-[Creative Commons Attribution-ShareAlike 3.0 Unported](http://creativecommons.org/licenses/by-sa/3.0). 
-This lab was adapted for OpenIntro by Andrew Bray and Mine &Ccedil;etinkaya-Rundel
-from a lab written by Mark Hansen of UCLA Statistics.
+Este é um produto da OpenIntro que é distribuído sob uma
+[Licença Creative Commons Atribuição -- Compartilhamento pela Mesma Licença 3.0](http://creativecommons.org/licenses/by-sa/3.0). 
+Este laboratório foi adaptado para a OpenIntro por Andrew Bray e Mine &Ccedil;etinkaya-Rundel
+de um laboratório escrito por Mark Hansen do departamento de Estatística da UCLA. Tradução para o português por Erikson Kaszubowski.
 </div>
