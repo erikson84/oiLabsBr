@@ -52,18 +52,6 @@ Para visualizar os nomes das variáveis, digite o comando
 names(cdc)
 ```
 
-This returns the names `genhlth`, `exerany`, `hlthplan`, `smoke100`, `height`, 
-`weight`, `wtdesire`, `age`, and `gender`. Each one of these variables 
-corresponds to a question that was asked in the survey.  For example, for 
-`genhlth`, respondents were asked to evaluate their general health, responding
-either excellent, very good, good, fair or poor. The `exerany` variable 
-indicates whether the respondent exercised in the past month (1) or did not (0).
-Likewise, `hlthplan` indicates whether the respondent had some form of health 
-coverage (1) or did not (0). The `smoke100` variable indicates whether the 
-respondent had smoked at least 100 cigarettes in her lifetime. The other 
-variables record the respondent's `height` in inches, `weight` in pounds as well
-as their desired weight, `wtdesire`, `age` in years, and `gender`.
-
 Este comando retorna os nomes `genhlth`, `exerany`, `hlthplan`, `smoke100`, `height`, 
 `weight`, `wtdesire`, `age`, e `gender`. Cada uma dessas variáveis corresponde 
 a uma questão que foi feita na pesquisa. Por exemplo, para `genhlth`, os respondentes 
@@ -164,39 +152,40 @@ smoke <- table(cdc$smoke100)
 barplot(smoke)
 ```
 
-Here, we've made a new object, a table, called `smoke` (the contents of which we
-can see by typing `smoke` into the console) and then used it in as the input for
-`barplot`. The special symbol `<-` performs an *assignment*, taking the output 
-of one line of code and saving it into an object in your workspace.   This is 
-another important idea that we'll return to later.
+Agora, criamos um novo objeto, uma tabela, denominada `smoke` (seu conteúdo pode 
+ser verificado digitando `smoke` no console) e então a utilizamos como entrada 
+para o comando `barplot`. O símbolo especial `<-` realiza uma *atribuição*, 
+tomando a saída de uma linha de código e salvando-a em um objeto no seu espaço 
+de trabalho. Esta é outra ideia importante que retomaremos mais tarde.
 
-2.  Create a numerical summary for `height` and `age`, and compute the 
-    interquartile range for each. Compute the relative frequency distribution for
-    `gender` and `exerany`. How many males are in the sample? What proportion of
-    the sample reports being in excellent health?
+2.  Crie um resumo numérico para `height` (altura) e `age` (idade), e calcule 
+    o intervalo interquartílico para cada um. Calcule a distribuição de frequência 
+    relativa para `gender` (gênero) e `exerany` (se fez exercícios). Quantos homens 
+    compõem a amostra? Qual proporção da amostra diz estar com saúde excelente?
 
-The `table` command can be used to tabulate any number of variables that you 
-provide.  For example, to examine which participants have smoked across each 
-gender, we could use the following.
+O comando `table` pode ser utilizado para tabular qualquer número de variáveis 
+que você quiser. Por exemplo, para examinar quais participantes fumam, 
+dividido por gênero, nós podemos utilizar o seguinte código.
 
 ```{r table-smoke-gender, eval=FALSE}
 table(cdc$gender,cdc$smoke100)
 ```
 
-Here, we see column labels of 0 and 1. Recall that 1 indicates a respondent has
-smoked at least 100 cigarettes. The rows refer to gender. To create a mosaic 
-plot of this table, we would enter the following command.
+Aqui, vemos etiquetas de coluna formadas por 0 e 1. Lembre-se que o 1 indica que 
+o respondente fumou pelo menos 100 cigarros. As linhas se referem ao gênero. 
+Para criar um gráfico de mosaico para essa tabela, entramos com o seguinte comando.
 
 ```{r mosaic-smoke-gender, eval=FALSE}
 mosaicplot(table(cdc$gender,cdc$smoke100))
 ```
 
-We could have accomplished this in two steps by saving the table in one line and
-applying `mosaicplot` in the next (see the table/barplot example above).
+Nós poderíamos ter conseguido esse resultado em duas etapas: salvando a tabela em 
+uma linha e aplicando `mosaicplot` em seguida (veja o exemplo de 
+tabela/gráfico de barras acima).
 
-3.  What does the mosaic plot reveal about smoking habits and gender?
+3.  O que  o gráfico de mosaico revela sobre os hábitos de fumar e gênero?
 
-## Interlude: How R thinks about data
+## Interlúdio: Como o R Pensa a Respeito dos Dados
 
 We mentioned that R stores data in data frames, which you might think of as a 
 type of spreadsheet. Each row is a different observation (a different respondent)
@@ -471,8 +460,8 @@ will serve us well throughout this course.
     standard deviation of the mean.
 
 <div id="license">
-This is a product of OpenIntro that is released under a 
-[Creative Commons Attribution-ShareAlike 3.0 Unported](http://creativecommons.org/licenses/by-sa/3.0). 
-This lab was adapted for OpenIntro by Andrew Bray and Mine &Ccedil;etinkaya-Rundel 
-from a lab written by Mark Hansen of UCLA Statistics.
+Este é um produto da OpenIntro que é distribuído sob uma
+[Licença Creative Commons Atribuição -- Compartilhamento pela Mesma Licença 3.0](http://creativecommons.org/licenses/by-sa/3.0). 
+Este laboratório foi adaptado para a OpenIntro por Andrew Bray e Mine &Ccedil;etinkaya-Rundel
+de um laboratório escrito por Mark Hansen do departamento de Estatística da UCLA. Tradução para o português por Erikson Kaszubowski.
 </div>

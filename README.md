@@ -1,10 +1,10 @@
-Laboratório da OpenIntro
+Laboratórios da OpenIntro
 ========================
 
-Os Laboratórios da OpenIntro tem por objetivo promover a compreensão e a aplicação
+Os Laboratórios da OpenIntro têm por objetivo promover a compreensão e a aplicação
 da Estatística por meio da prática de análise de dados. Os títulos dos laboratórios 
-são baseados no tópico abordado, que corresponde a capítulos específicos de 
-todas as três versões do "OpenIntro Statistics", um livro-texto gratuiro e *open-source*. 
+são baseados nos tópicos abordados, e correspondem a capítulos específicos de 
+todas as três versões do "OpenIntro Statistics", um livro-texto gratuito e *open-source*. 
 O livro, bem como a versão html dos laboratórios, pode ser encontrado no *site* [http://www.openintro.org/stat/labs.php](http://www.openintro.org/stat/labs.php).
 
 Atualmente, oferecemos suporte aos arquivos de código-fonte no formato .Rmd, que 
@@ -18,7 +18,7 @@ laboratório, que está arquivada em [http://www.openintro.org/stat/labs.php](ht
 Essa versão não está mais sendo atualizada, e portanto pode diferer um pouco 
 dos laboratórios disponibilizados aqui no formato .Rmd.
 
-Esperamos que esses materiais possam ser úteis para professores e alunos de 
+Esperamos que estes materiais possam ser úteis para professores e alunos de 
 Estatística. Se você desenvolver alguma variante interessante destes laboratórios 
 ou então criar laboratórios novos, avise-nos!
 
