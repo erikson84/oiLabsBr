@@ -1,22 +1,27 @@
-OpenIntro Labs
-==============
+Laboratório da OpenIntro
+========================
 
-OpenIntro Labs promote the understanding and application of statistics through 
-applied data analysis. Labs are titled based on topic area, which correpond to 
-particular chapters in all three versions of OpenIntro Statistics, a free and 
-open-source textbook. The textbook as well as the html version of the labs can
-be found at [http://www.openintro.org/stat/labs.php](http://www.openintro.org/stat/labs.php).
+Os Laboratórios da OpenIntro tem por objetivo promover a compreensão e a aplicação
+da Estatística por meio da prática de análise de dados. Os títulos dos laboratórios 
+são baseados no tópico abordado, que corresponde a capítulos específicos de 
+todas as três versões do "OpenIntro Statistics", um livro-texto gratuiro e *open-source*. 
+O livro, bem como a versão html dos laboratórios, pode ser encontrado no *site* [http://www.openintro.org/stat/labs.php](http://www.openintro.org/stat/labs.php).
 
-We currently support our source files in the .Rmd format, which can be output into
-html format (though output to pdf is also possible). The source files are processed
-using the [knitr](http://yihui.name/knitr/) package in R. If you are using RStudio, 
-be sure that you've adjusted your settings to compile source files using this
-package. If you are unfamiliar with working with these file types, you may consider
-creating your own copy of the Google Doc version of each lab, which are archived at
-[http://www.openintro.org/stat/labs.php](http://www.openintro.org/stat/labs.php). 
-These versions are not currently supported, so they will differ slightly from the
-.Rmd labs found here.
+Atualmente, oferecemos suporte aos arquivos de código-fonte no formato .Rmd, que 
+pode ser facilmente convertido para o formato html (a conversão para o formato pdf 
+também é possível). Os arquivos de código-fonte são processados pelo pacote 
+[knitr](http://yihui.name/knitr/) do R. Se vocês está utilizando o RStudio, 
+certifique-se de ajustar suas configurações para compilar o código-fonte utilizando 
+esse pacote. Se você não está familiarizado com esse tipo de arquivo, você pode 
+considerar a possibilidade de criar sua própria cópia da versão Google Doc de cada 
+laboratório, que está arquivada em [http://www.openintro.org/stat/labs.php](http://www.openintro.org/stat/labs.php). 
+Essa versão não está mais sendo atualizada, e portanto pode diferer um pouco 
+dos laboratórios disponibilizados aqui no formato .Rmd.
 
-It is our hope that these materials are useful for instructors and students of 
-statistics.  If you end up developing some interesting variants of these labs or 
-creating new ones, please let us know!
+Esperamos que esses materiais possam ser úteis para professores e alunos de 
+Estatística. Se você desenvolver alguma variante interessante destes laboratórios 
+ou então criar laboratórios novos, avise-nos!
+
+Se você encontrar erros ortográficos, erros de tradução ou qualquer problema com a 
+versão em Português, sinta-se à vontade para fazer um `push` das sugestões para o 
+repositório do GitHub.
