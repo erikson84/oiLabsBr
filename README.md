@@ -23,5 +23,5 @@ Estatística. Se você desenvolver alguma variante interessante destes laborató
 ou então criar laboratórios novos, avise-nos!
 
 Se você encontrar erros ortográficos, erros de tradução ou qualquer problema com a 
-versão em Português, sinta-se à vontade para fazer um `push` das sugestões para o 
-repositório do GitHub.
+versão em Português, sinta-se à vontade para clonar o repositório e fazer um `pull request` 
+das sugestões.
